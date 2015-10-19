@@ -1,4 +1,9 @@
 <?php
+
+include 'tirada.php';
+
+
+
 $lang="sp";
 $menu=array(
     "titulo"=>array(
@@ -72,10 +77,47 @@ $menu=array(
                   </ul>
         </li>
         <li><a href="#"><?php echo $menu['instrucciones'][$lang]?></a></li>
+        
       </ul>
     </div>
   </div>
 </nav>
+
+
+<div class="container">
+    
+    <div class="row">
+        <?php 
+        //Aquí hacemos que nos muestre de forma automática las imágenes de los dados.
+        echo dados1al6(); ?>
+    </div>
+  
+    <div class="row">
+        <div class='col-xs-7'><h1>Dado aleatorio:</h1></div>
+    </div>
+    
+    <div class="row">
+        <?php 
+            
+            //Esta función genera un numero aleatorio y asigna ese número a la url de la imagen.
+        
+            echo dadoAleatorio();
+            
+        ?>
+        
+       
+        
+        <div class="tirarDado">
+            <form method="post">
+            
+                <input type="submit" name="submit" value='¡Haz tu tirada!' class='btn btn-primary'></input>
+        
+            </form>
+        </div>
+        
+    </div>
+  
+</div>
 
 
 </body>
