@@ -51,6 +51,7 @@ $menu=array(
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/dado.css">
 </head>
 <body>
 
@@ -86,14 +87,14 @@ $menu=array(
 
 <div class="container">
     
-    <div class="row">
+    <div class="row" style="display:none;">
         <?php 
         //Aquí hacemos que nos muestre de forma automática las imágenes de los dados.
         echo dados1al6(); ?>
     </div>
   
     <div class="row">
-        <div class='col-xs-7'><h1>Dado aleatorio:</h1></div>
+        <div class='col-xs-7'><h1>Resultado aleatorio dado 6 caras:</h1></div>
     </div>
     
     <div class="row">
@@ -104,6 +105,7 @@ $menu=array(
             echo dadoAleatorio();
             
         ?>
+        
         
        
         
@@ -118,6 +120,82 @@ $menu=array(
     </div>
   
 </div>
+
+
+
+
+<div class="container">
+    
+    <div class="row" style="display:none;">
+        <?php 
+        //Aquí hacemos que nos muestre de forma automática las imágenes de los dados.
+        echo dados1al3(); ?>
+    </div>
+  
+    <div class="row">
+        <div class='col-xs-7'><h1>Resultado aleatorio dado 3 caras:</h1></div>
+    </div>
+    
+    <div class="row">
+        <?php 
+            
+            //Esta función genera un numero aleatorio y asigna ese número a la url de la imagen.
+        
+            echo dadoAleatorio2();
+            
+        ?>
+        
+        
+       
+        
+        <div class="tirarDado">
+            <form method="post">
+            
+                <input type="submit" name="submit" value='¡Haz tu tirada!' class='btn btn-primary'></input>
+        
+            </form>
+        </div>
+        
+    </div>
+  
+</div>
+
+<div class="container">
+    
+    <div class="row" style="display:none;">
+        <?php 
+        //Aquí hacemos que nos muestre de forma automática las imágenes de los dados.
+        echo dados1al12(); ?>
+    </div>
+  
+    <div class="row">
+        <div class='col-xs-7'><h1>Resultado aleatorio dado dodecaedro:</h1></div>
+    </div>
+    
+    <div class="row">
+        <?php 
+            
+            //Esta función genera un numero aleatorio y asigna ese número a la url de la imagen.
+        
+            echo dadoAleatorio3();
+            
+        ?>
+        
+        
+       
+        
+        <div class="tirarDado">
+            <form method="post">
+            
+                <input type="submit" name="submit" value='¡Haz tu tirada!' class='btn btn-primary'></input>
+        
+            </form>
+        </div>
+        
+    </div>
+  
+</div>
+
 
 
 </body>
