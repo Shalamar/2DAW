@@ -46,7 +46,7 @@ include 'menu.php';
   </div>
 </nav>
 
-<!-- Dado de seis -->
+
 <div class="container">
     
     <div class="row" style="display:none;">
@@ -85,7 +85,7 @@ include 'menu.php';
 
 
 
-<!-- Dado de tres -->
+
 <div class="container">
     
     <div class="row" style="display:none;">
@@ -107,12 +107,20 @@ include 'menu.php';
             
         ?>
         
-  
+        
+       
+        
+        <div class="tirarDado">
+            <form method="post">
+            
+                <input type="submit" name="submit" value='¡Haz tu tirada!' class='btn btn-primary'></input>
+        
+            </form>
+        </div>
+        
     </div>
   
 </div>
-
-<!-- Dado dodecaedro -->
 
 <div class="container">
     
@@ -135,6 +143,13 @@ include 'menu.php';
             
         ?>
       
+        <div class="tirarDado">
+            <form method="post">
+            
+                <input type="submit" name="submit" value='¡Haz tu tirada!' class='btn btn-primary'></input>
+        
+            </form>
+        </div>
         
     </div>
   

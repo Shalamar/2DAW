@@ -1,84 +1,62 @@
-<?php
-    $arr1=array('cara1.png','cara2.png','cara3.png','cara4.png','cara5.png','cara6.png');
-    
-    function dados1al6(){
-        
-        //Sentencia para mostrar los dados.
-        
-        global $arr1;
-        for($i=0; $i<count($arr1); $i++) {
-            
-            echo '<div class="col-xs-2"><img class="dado" src="imagenes/'.$arr1[$i].'"></img></div>';
-            
-        }
-    
-    }
-    
-    function dadoAleatorio(){
+<?php 
        
+       //Array multilenguaje
+    include 'menu.php';
         
-        global $arr1;
+        //Dados
+    include 'dado.php';
         
-        $numAleatorio = rand(0,5);
-            
-        echo '<div class="col-xs-2"><img class="dado" src="imagenes/'.$arr1[$numAleatorio].'"></img></div>';
-   
-    }
-    
-    $arr2=array('cara1.png','cara2.png','cara3.png');
-    
-    function dados1al3(){
-        
-        //Sentencia para mostrar los dados.
-        
-        global $arr2;
-        for($i=0; $i<count($arr2); $i++) {
-            
-            echo '<div class="col-xs-2"><img class="dado" src="imagenes/'.$arr2[$i].'"></img></div>';
-            
-        }
-    
-    }
-    
-    function dadoAleatorio2(){
-       
-        
-        global $arr2;
-        
-        $numAleatorio = rand(0,2);
-            
-        echo '<div class="col-xs-2"><img class="dado" src="imagenes/'.$arr2[$numAleatorio].'"></img></div>';
-   
-    }
-    
-    
-    
-    $arr3=array('1.png','2.png','3.png','4.png','5.png','6.png','7.png','8.png','9.png','10.png','11.png','12.png');
-    
-    function dados1al12(){
-        
-        //Sentencia para mostrar los dados.
-        
-        global $arr3;
-        for($i=0; $i<count($arr3); $i++) {
-            
-            echo '<div class="col-xs-2"><img class="dado" src="imagenes/dodecaedro/'.$arr3[$i].'"></img></div>';
-            
-        }
-    
-    }
-    
-    function dadoAleatorio3(){
-       
-        
-        global $arr3;
-        
-        $numAleatorio = rand(0,11);
-            
-        echo '<div class="col-xs-2"><img class="dado" src="imagenes/dodecaedro/'.$arr3[$numAleatorio].'"></img></div>';
-   
-    }
-    
-    
-    
 ?>
+<html>
+    <head>
+        <title>Math Dice</title>
+        <meta charset="UTF-8">
+ <!-- Bootstrap -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/dado.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ 
+    </head>
+    
+    <body>
+        
+        <?php 
+        
+        //Pruebas para insercion de dado.
+        
+            echo dadoAleatorio();
+            
+        ?>
+        
+        <!-- Pruebas para el botón de tirar dado -->
+        
+        <form method="post">
+            
+            <div class='tirarDado'><input type="submit" name="submit" value='¡Tira el dado!' class='btn btn-primary'></input></div>
+        
+        </form>
+        
+<div class="container">
+    <div class="row">
+        
+        <div class="col-xs-6">
+            <div class="row">
+                <div class="col-xs-6"><div class="mini-box">1</div></div>
+                <div class="col-xs-6"><div class="mini-box">2</div></div>
+                <div class="col-xs-6"><div class="mini-box">3</div></div>
+                <div class="col-xs-6"><div class="mini-box">4</div></div>
+            </div>
+        </div>
+        
+        <div class="col-xs-6">
+            <div class="big-box">image</div>
+        </div>
+        
+    </div>
+</div>
+        
+    </body>
+    
+</html>

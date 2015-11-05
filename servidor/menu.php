@@ -11,8 +11,19 @@ $menu=array(
     ),
     "instrucciones"=>array(
       "sp"=>"Instrucciones",
-      "en"=>"Instructions"
+      "en"=>"Instructions",
+      "submenu"=>array(
+          "tipo1"=>array(
+             "sp"=>"FAQ",
+             "en"=>"FAQ",
+           ),
+          "tipo2"=>array(
+             "sp"=>"Contactar",
+             "en"=>"Contact",
+           ),
+        )
     ),
+    
     "tiposJuego"=>array(
       "sp"=>"Tipos juego",
       "en"=>"Game choice",
