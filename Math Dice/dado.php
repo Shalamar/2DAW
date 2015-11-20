@@ -35,13 +35,35 @@
             }
         
         }else{
-            
-            return "ERROR
+            if ($dado1 != $num1) {
+                return "ERROR
+                    <br>
+                    El dado1: ".$dado1." no coinciden con los numeros que has introducido.<br>
+                    
+                    Numero 1: ".$num1."<br>
+                    Numero 2: ".$num2;
+                    
+            } elseif ($dado2 != $num2) {
+                
+                return "ERROR
+                    <br>
+                    El dado2:".$dado2." no coinciden con los numeros que has introducido.<br>
+                    
+                    Numero 1: ".$num1."<br>
+                    Numero 2: ".$num2;
+                
+            } else {
+                
+                return "ERROR
                     <br>
                     El dado1: ".$dado1." o el dado2: ".$dado2." no coinciden con los numeros que has introducido.<br>
                     
                     Numero 1: ".$num1."<br>
                     Numero 2: ".$num2;
+                    
+            }
+            
+            
             
         }
         
