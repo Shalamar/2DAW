@@ -33,9 +33,9 @@
                                 <!-- Botón -->
                                 
                                 <?php if($jugador1->getLang() == 'sp'){ ?>
-                                   <button type="button" class="btn btn-danger" onclick="window.location.href='index.php'">Cerrar sesión</button>
+                                   <button type="button" class="btn btn-danger" onclick="window.location.href='indice.php'">Cerrar sesión</button>
                                 <?php }else {?>
-                                    <button type="button" class="btn btn-danger" onclick="window.location.href='index.php'">Sign off</button>
+                                    <button type="button" class="btn btn-danger" onclick="window.location.href='indice.php'">Sign off</button>
                                 <?php } ?>
                                 
                             </div>

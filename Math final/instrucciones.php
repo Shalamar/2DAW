@@ -62,7 +62,7 @@ include('sesion.php');
     	
     	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
     		<div class="product-chooser-item">
-    			<img src="img/misdies.png" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile">
+    			<img src="img/mas10.png" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile">
                 <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
     				<?php if($jugador1->getLang() == 'sp'){ ?>
     				    <span class="title">Resultado</span>

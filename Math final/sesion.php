@@ -22,7 +22,7 @@ if(isset($_POST['jugador'])){
         $jugador1 = $_SESSION['jugador'];
         
     }else{
-        header('Location: index.php');
+        header('Location: indice.php');
     }
 }
 ?>
