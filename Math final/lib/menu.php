@@ -43,6 +43,10 @@ $menu=array(
         "sp"=>"Acerca de",
         "en"=>"About"
         ),
+        "Perfil"=>array(
+        "sp"=>"Perfil",
+        "en"=>"Profile"
+        ),
     );
 ?>
 
@@ -74,6 +78,7 @@ $menu=array(
         -->
         <li><a href="instrucciones.php"><?php echo $menu['instrucciones'][$lang]?></a></li>
         <li><a href="acerca.php"><?php echo $menu['acercaDe'][$lang]?></a></li>
+         <li><a href="perfil.php"><?php echo $menu['Perfil'][$lang]?></a></li>
       </ul>
     </div>
   </div>
@@ -86,3 +91,4 @@ $menu=array(
         </div>
     </form>
 </div>
+
