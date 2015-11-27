@@ -6,14 +6,12 @@ include('sesion.php');
     }
 ?>
 <html>
-
 <head>
-   <?php
+    <?php
         include("lib/header.php");
         include 'lib/menu.php';
-        
     ?>
-   
+
 </head>
 
 <body>

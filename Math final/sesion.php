@@ -25,4 +25,6 @@ if(isset($_POST['jugador'])){
         header('Location: indice.php');
     }
 }
+
+
 ?>
