@@ -7,9 +7,7 @@
       $params["secure"], $params["httponly"]
   );
 }
-    
-    
-    
+   
     if(isset($_SESSION)){
       
       session_destroy();
@@ -24,7 +22,6 @@
 </head>
 
     <body>
-        
 
         <img class="logo" src="img/MathDice.png"></img>
 

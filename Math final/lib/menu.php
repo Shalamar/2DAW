@@ -1,5 +1,5 @@
 <?php
-$lang= $jugador1->getLang();
+    $lang= $_SESSION['jugador']->getLang();
 /*
 if(isset($_POST['lang']) && strlen($_POST['lang'])>0){
     
@@ -43,10 +43,6 @@ $menu=array(
         "sp"=>"Acerca de",
         "en"=>"About"
         ),
-    "Perfil"=>array(
-        "sp"=>"Perfil",
-        "en"=>"Profile"
-        ),
     );
 ?>
 
@@ -77,8 +73,7 @@ $menu=array(
         </li>
         -->
         <li><a href="instrucciones.php"><?php echo $menu['instrucciones'][$lang]?></a></li>
-        <li><a href="acerca.php"><?php echo $menu['acercaDe'][$lang]?></a></li>
-         <li><a href="perfil.php"><?php echo $menu['Perfil'][$lang]?></a></li>
+        <li><a href="acercaDe.php"><?php echo $menu['acercaDe'][$lang]?></a></li>
       </ul>
     </div>
   </div>
@@ -92,3 +87,10 @@ $menu=array(
     </form>
 </div>
 
+<div class="perfil">
+<form method="post"action="perfil.php">    
+        <div class="btn-group btn-group-primary">
+          <a href="perfil.php"><button class="btn btn-primary btn-md" type="button"><?php if($jugador1->getLang() == 'en'){echo 'Profile';}else{echo 'Perfil';} ?></button></a>
+        </div>
+    </form>
+</div>

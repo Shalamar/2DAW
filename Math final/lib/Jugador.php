@@ -48,19 +48,19 @@ class Jugador{
     //SETTERS
     
     public function setNombre($nombre1){
-        $nombre = $nombre1;
+        $this->nombre = $nombre1;
     }
     
     public function setApellidos($apellidos1){
-        $apellidos = $apellidos1;
+        $this->apellidos = $apellidos1;
     }
     
     public function setEdad($edad1){
-        $edad = $edad1;
+        $this->edad = $edad1;
     }
     
     public function setTipo($tipo1){
-        $tipo = $tipo;
+        $this->tipo = $tipo;
     }
     
     public function setPuntos($puntos){
@@ -68,7 +68,7 @@ class Jugador{
     }
     
     public function setLang($lang){
-        $this->$lang = $lang;
+        $this->lang = $lang;
     }
     
     //FUNCIONES
